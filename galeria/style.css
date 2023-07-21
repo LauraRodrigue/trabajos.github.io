@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    align-items: center ;
+    display: grid;
+    grid-template-rows: 10% 20% 60% auto ;
+}
+#inicio{
+    border-radius: 25%;
+    width: 100px;
+    height: 80px;
+    background-color: white;
+    border:5px solid blue;
+    position: relative;
+    margin-top: 2%;
+    margin-left:87%;
+    }
+
+#perfil{
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid blue;
+    border-radius: 100%;
+    margin-left: 35%;
+    margin-top: 5%;
+
+}
+
+.galeria{
+    margin-left: 15%;
+    margin-top: 5%;
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.imagenes{
+    margin: 0;
+    border: solid blue;
+    width: 70%;
+    height: 70%;
+}
+h1{
+    color: blue;
+    height: 100%;
+    font-size: 100px;
+    margin-top: 10%;
+    margin: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        margin-left: 22%;
+        margin-top: 10%;
+    }
+    #perfil{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .galeria{
+        margin-top: 0%;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    h1{
+        height: 10%;
+        box-sizing: 100px;
+    }
+    #perfil{
+        margin-top: 0%;
+        height: 350px;
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .galeria{
+        margin-top: 25%;
+        margin-left: 30%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .imagenes{
+        margin: 0;
+        width: 60%;
+        height: 60%;
+    }
+    #perfil{
+        height: 350px;
+        width: 350px;
+        margin-left: 25%;
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+  #perfil{
+    height: 250px;
+    width: 250px;
+    margin-left: 25%;
+    margin-top: -30%;
+  }
+  h1{
+    font-size: 50px;
+  }
+  .galeria{
+    margin-top: -20%;
+  }
+}
+@media screen and (max-width: 315px) {
+    #perfil{
+        margin-top: -20%;
+        margin-left: 12%;   
+        height: 200px;
+        width: 200px
+    }
+    .galeria{
+        margin-top: -30%;
+    }
+}

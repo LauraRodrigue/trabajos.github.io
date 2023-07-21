@@ -1,0 +1,100 @@
+body{
+    margin: 1%;
+    background-color: rgb(179, 186, 190);
+
+    
+}
+#inicio{
+    border-radius: 25%;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    border:5px solid blue;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 85%;
+    }
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border: 10px solid blue;
+    margin-left: 18%;
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(9, 61, 158);
+    width: 30%;
+}
+.circulo{
+    width: 60%;
+    height: 25%;
+    background-color: rgb(30, 164, 253);
+    border-radius: 100%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    margin-left: 5%;
+    
+}
+
+.enca{
+    color: white;
+    text-align: center;
+    font-size: 100%;
+}
+.viñ{
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.descrip{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    font-size: 100%;
+}
+.titulo{
+    margin-left: 2%;
+    width: 20%;
+    justify-content: space-between;
+}
+.direccion{
+    margin-left:2%;
+}
+.l{
+    background-color: rgb(9, 61, 158);
+    width: 3%;
+    margin-left: 2%;
+    height: 0.5%;
+}
+.subt{
+    margin-left: 2%;
+}
+.viñ2{
+    margin-left: 1%;
+}
+.sub{
+    margin-left: 2%;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        display: fex;
+        flex-direction: column;
+    }
+    .perfil{
+        width: 100%;
+    }
+    .descrip{
+        width: 100%;
+    }
+}

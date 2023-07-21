@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="inicio">
+            <a href="./index.html">
+                <h2>Inicio</h2>
+            </a>
+        </button>
+        <div class="cuadrado">
+            <div class="circulo" id="cirRojo"></div>
+            <div class="circulo" id="cirAmarillo"></div>
+            <div class="circulo" id="cirVerde"></div>
+        </div>
+        <button onclick="cambiar()">Cambiar</button>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+            }
+
+            #inicio {
+                border-radius: 25%;
+                width: 100px;
+                height: 60px;
+                background-color: rgba(4, 4, 10, 0.527);
+                position: absolute;
+                margin-top: 2%;
+                margin-left: 2%;
+            }
+
+            h2 {
+                margin: 0;
+                color: white;
+            }
+
+            a {
+                color: white;
+            }
+
+            .container {
+                height: 100vh;
+                background-image: linear-gradient(rgb(139, 139, 238), rgb(244, 217, 248), #98569b);
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .cuadrado {
+                margin-top: 10%;
+                background-color: rgba(4, 4, 10, 0.527);
+                height: 570px;
+                width: 250px;
+                border-radius: 30px;
+                margin-left: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 1px 1px 2px solid;
+                box-shadow: 5px 5px 5px white;
+            }
+
+            .circulo {
+                height: 30%;
+                width: 75%;
+                border-radius: 100%;
+                margin-top: 4%;
+                box-shadow: 5px 5px 5px white;
+                background-color: black;
+            }
+
+            button {
+                margin-top: 3%;
+                padding: 1%;
+                width: 100px;
+                margin-left: 46.5%;
+                border-radius: 20px;
+                box-shadow: 5px 5px 5px;
+                border: transparent;
+            }
+
+            @media screen and (max-width: 700px) {
+
+                .cuadrado {
+                    margin-top: 20%;
+                    margin-left: 20%;
+                }
+
+            }
+
+            @media screen and (max-width: 300px) {
+
+                .cuadrado {
+                    margin-top: 30%;
+                    margin-left: 0%;
+                }
+
+            }
+        </style>
+        <script>
+            document.getElementById("cirRojo").style.backgroundColor = "red"
+            function cambiar() {
+                if (document.getElementById("cirRojo").style.backgroundColor == "red") {
+                    document.getElementById("cirAmarillo").style.backgroundColor = "yellow"
+                    document.getElementById("cirRojo").style.backgroundColor = "black"
+                } else if (document.getElementById("cirAmarillo").style.backgroundColor == "yellow") {
+                    document.getElementById("cirVerde").style.backgroundColor = "green"
+                    document.getElementById("cirAmarillo").style.backgroundColor = "black"
+                } else if (document.getElementById("cirVerde").style.backgroundColor = "green") {
+                    document.getElementById("cirRojo").style.backgroundColor = "red"
+                    document.getElementById("cirVerde").style.backgroundColor = "black"
+                }
+            }
+
+        </script>
+</body>
+
+</html>

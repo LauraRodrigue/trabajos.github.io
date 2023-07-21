@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="proceso">
+        <br>
+        <div id="calculadora"></div>
+    </div>
+    <button id="inicio">
+        <a href="../index.html">
+            <h2>Inicio</h2>
+        </a>
+    </button>
+
+
+    <script>
+        const valores = [
+            1, 2, 3, '+', '-', 4, 5, 6, '*', '/', 7, 8, 9, '^', '√', 0, '.', 'C', '=', '"_"'
+        ];
+
+        valores.forEach((val) => {
+            const boton = document.createElement('input');
+            boton.type = 'button';
+            boton.className = 'boton';
+            boton.value = val;
+            boton.addEventListener('click', () => {
+                agreVal(val);
+            });
+            document.getElementById('calculadora').appendChild(boton);
+        });
+
+        function agreVal(val) {
+            const proceso = document.getElementById('proceso');
+
+            if (val === 'C') {
+                proceso.value = ''; // Limpiar el campo de entrada
+            } else if (val === '=') {
+                try {
+                    const resultado = eval(proceso.value); // Evaluar la expresión matemática
+                    proceso.value = resultado;
+                } catch (error) {
+                    proceso.value = 'Error'; // Manejar errores de evaluación
+                }
+            } else if (val === '√') {
+                try {
+                    const resultado = Math.sqrt(parseFloat(proceso.value)); // Calcular la raíz cuadrada
+                    proceso.value = resultado;
+                } catch (error) {
+                    proceso.value = 'Error'; // Manejar errores de cálculo
+                }
+            } else if (val === '^') {
+                proceso.value += '^'; // Agregar el símbolo de potencia al campo de entrada
+            } else {
+                proceso.value += val; // Agregar el valor al campo de entrada
+            }
+        }
+    </script>
+</body>
+
+</html>

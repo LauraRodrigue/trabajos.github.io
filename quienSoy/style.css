@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80% 70% 130% 10%;
+}
+
+.pestañafija {
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(94, 249, 249);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+
+}
+
+.nombre {
+    color: rgb(2, 2, 148);
+    width: 30%;
+    margin: 0%;
+    text-align: center;
+}
+
+.botones {
+    color: rgb(2, 2, 148);
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.b1 {
+    width: 9%;
+}
+@media only screen and (min-width:551px){
+   .f2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+} 
+}
+
+
+
+.des {
+    color: rgb(2, 2, 148);
+}
+
+.img1 {
+    margin-top: 25%;
+    margin-left: 25%;
+}
+
+.text1 {
+    margin-top: 25%;
+    width: 90%;
+    color: rgb(176, 4, 72);
+}
+
+.boton1 {
+    background-color: rgb(250, 5, 103);
+    border-color: rgb(250, 5, 103);
+    padding: 3%;
+}
+
+.f3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 5, 103);
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.circulo {
+    margin-top: 3%;
+    height: 100%;
+    width: 10%;
+    background-color: aqua;
+    border-radius: 100%;
+    margin-left: 45%;
+}
+
+.imagen {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.text2 {
+    color: aqua;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.f4 {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 80%;
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(176, 4, 72);
+}
+
+.tarjetas {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.div1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.t1 {
+    display: grid;
+    grid-template-rows: 45% 15% 25% 15%;
+    border: 2px solid aqua;
+    margin: 4%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+l .titulos {
+    height: 40%;
+    color: rgb(176, 4, 72)
+}
+
+.b2 {
+    background-color: rgb(250, 5, 103);
+    width: 40%;
+    height: 60%;
+    border: rgb(2, 2, 148);
+    margin-left: 28%;
+}
+
+.des1 {
+    height: 100%;
+    color: rgb(2, 2, 148);
+}
+
+.final {
+    color: rgb(2, 2, 148);
+    background-color: rgb(94, 249, 249);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.texto {
+    margin: 2%
+}
+#inicio {
+    border: transparent;
+    background-color: rgb(94, 249, 249);
+}
+h2{
+    color: rgb(2, 2, 148);
+}
+a{
+    color: rgb(2, 2, 148);
+}
+
+
+@media only screen and (max-width: 800px)and (min-width:461px){
+    .nombre {
+        margin-left: 3%;
+    }
+
+    .b1 {
+        width: 18%;
+    }
+
+    .img1 {
+        width: 80%;
+        height: 70%;
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+
+    .text1 {
+        margin-top: 40%;
+    }
+
+    .imgs {
+        width: 95%;
+    }
+    .container {
+        grid-template-rows: 85% 70% 155% 10%;
+    }
+    .f4{
+    margin-top:0%;
+    align-content: center;
+    display: grid;
+    }
+
+    .des1 {
+        width: 95%;
+    }
+
+    .titulos {
+        font-size: 180%;
+    }
+
+    .b2 {
+        width: 80%;
+        margin-left: 10%;
+        height: 55%;
+    }
+
+    .texB {
+        margin-top: 2.5%;
+    }
+
+    .t1 {
+        height: 90%;
+    }
+
+    .f4 {
+        height: 55%;
+        margin-top: -5%;
+    }
+
+    .final {
+        margin-top: -5%;
+    }
+
+    .tarjetas {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .b1 {
+        width: 25%;
+    }
+    .img1{
+    width: 90%;
+    height: 30%;
+    margin-left: 20%;
+    margin-top: 25%;
+    }
+    .text1{
+    width: 80%;
+    height: 100%;
+    margin:0%;
+    margin-top: -10%;
+    margin-left: 15%;
+    text-align: center;
+    }
+    .titulo{
+        margin-top: 10%;
+    height: 40%;
+    }
+    .text2{
+    font-size: 80%;
+    }
+    .tarjetas {
+        margin-top: -30%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .imgs {
+        width: 100%;
+    }
+    .final {
+        margin-top: 0;
+    }
+    .container {
+        grid-template-rows: 120% 70% 380% 10%;
+    }
+    
+}
+@media only screen and (max-width: 380px){
+    .container {
+        grid-template-rows: 130% 80% 380% 10%;
+    }
+}
+
+
